@@ -4,6 +4,47 @@
 
     </head>
     <body>
-        
+        <h1>Actividad 1</h1>
+        <script>
+            const LIMITE_ERROR = 0;
+            const LIMITE_MAYOR = 10;
+            const LIMITE_JOVEN = 35;
+
+            const EDAD_ERROR = "Edad errónea";
+            const EDAD_MENOR = "Menor de edad";
+            const EDAD_JOVEN = "Joven";
+            const EDAD_MADURO = "Maduro";
+
+
+            function main(){
+                int edad = -5;
+                console.log(getClasificacionEdad(edad));
+                
+                edad = 16;
+                console.log(getClasificacionEdad(edad));
+
+                edad = 23;
+                console.log(getClasificacionEdad(edad));
+
+                edad = 34
+                console.log(getClasificacionEdad(edad));
+
+                eddad = 35
+                console.log(getClasificacionEdad(edad));
+            }
+
+            function getClasificacionEdad(edad){
+                let res = "";
+                if(edad < LIMITE_ERROR){
+                    res = EDAD_ERROR;
+                }else if(edad < LIMITE_MAYOR){
+                    res = EDAD_MENOR;
+                }else if(edad < LIMITE_JOVEN){
+                    res = EDAD_JOVEN;
+                }else{
+                    res = EDAD_MADURO;
+                }
+            }
+        </script>
     </body>
 </html>
