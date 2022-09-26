@@ -47,5 +47,32 @@
                 }
             }
         </script>
+
+        <script>
+            const DIAS_SEMANA = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"];
+
+            main();
+
+            function main(){
+                for(let i = 0; i < 10000; i++){
+                    let weekDay = getRandomWeekDay();
+                    console.log(weekDay);
+                    if(!DIAS_SEMANA.includes(weekDay)){
+                        return false;
+                    }
+                }
+                return true;
+            }
+
+            function getRandomWeekDay() {
+                let numAleatorio = getRandomBetween(0,6);
+                return DIAS_SEMANA[numAleatorio];
+            }
+
+            function getRandomBetween(min,max){
+                return Math.floor((Math.random() * (max-min+1))) + min;
+            }
+
+        </script>
     </body>
 </html>
