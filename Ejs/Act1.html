@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body></body>
+    <script>
+        let ARRAY = (1,2,3,4,5,6,7,8,9,10,11,12);
+        let carta;
+        let posicion;
+
+        main();
+
+        function main(){
+            posicion = getRandomBetween(0,ARRAY.length);
+            carta = ARRAY(posicion);
+            ARRAY(getRandomBetween(0,ARRAY.length)) = ARRAY(posicion);
+        }
+
+        function getRandomBetween(min,max){
+                return Math.floor((Math.random() * (max-min+1))) + min;
+            }
+
+    </script>
+</html>
