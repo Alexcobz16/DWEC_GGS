@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head></head>
-    <body>
-        <script>
+
             //Act 4
 
             // const TAB = '\t'
@@ -41,37 +37,42 @@
             //     console.log(salto);
             // }   
             
-            //Act 9 NECESITA REVISION
+            //Act 9
 
             // let x = 144;
             // let y = 999;
 
-            // function suma(x,y){
-            //     let valor = $x+$y;
-            //     return $valor;
+            //  function suma(x,y){
+            //      let valor = x+y;
+            //      return valor;
+            //  }
+
+            //  function resta(x,y){
+            //      let valor = x-y;
+            //      return valor;
+            //  }
+
+            //  function multiplicacion(x,y){
+            //      let valor = x*y;
+            //      return valor;
+            //  }
+
+            //  function division(x,y){
+            //      let valor = x/y;
+            //      return valor;
+            //  }
+            //  console.log(x,"+",y,"=",suma(x,y));
+            //  console.log(x,"-",y,"=",resta(x,y));
+            //  console.log(x,"*",y,"=",multiplicacion(x,y));
+            //  console.log(x,"/",y,"=",division(x,y));
+
+            //Act 6
+
+            // const LIMITE = 9;
+            // let centro = 5;
+
+            // for($i=0;$i<=LIMITE;$i++){
+            //     if($i==$centro){
+            //         for($j=0;)
+            //     }
             // }
-
-            // function resta(x,y){
-            //     let valor = $x-$y;
-            //     return $valor;
-            // }
-
-            // function multiplicacion(x,y){
-            //     let valor = $x*$y;
-            //     return $valor;
-            // }
-
-            // function division(x,y){
-            //     let valor = $x/$y;
-            //     return $valor;
-            // }
-            // console.log($x,"+",$y,"=",suma($x,$y));
-            // console.log($x,"-",$y,"=",resta($x,$y));
-            // console.log($x,"*",$y,"=",multiplicacion($x,$y));
-            // console.log($x,"/",$y,"=",division($x,$y));
-
-
-            
-        </script>
-    </body>
-</html>
