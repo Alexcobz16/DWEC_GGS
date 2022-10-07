@@ -66,13 +66,57 @@
             //  console.log(x,"*",y,"=",multiplicacion(x,y));
             //  console.log(x,"/",y,"=",division(x,y));
 
-            //Act 6
+            //  Act 6
 
             // const LIMITE = 9;
             // let centro = 5;
 
-            // for($i=0;$i<=LIMITE;$i++){
-            //     if($i==$centro){
-            //         for($j=0;)
+            // for(i=0;i<=LIMITE;i++){
+            //     if(i==centro){
+            //         for(j=0;){
+
+            //         }
             //     }
+            // }
+
+            //Act 10
+
+            // let nombre = "Alejandro";
+
+            // console.log("Me llamo " + nombre);
+
+            //Act 11
+
+            // let nombre = "Alejandro";
+            // let direccion = "GGS";
+            // let numero = "654231346";
+
+            // console.log("Nombre: " + nombre + ", direccion: " + direccion + ", numero: " + numero);
+
+            //Act 12
+
+            // const dolar = 0.98;
+
+            // let euros;
+            // let cambio;
+
+            // euros = prompt("¿Cuanto vas a cambiar?");
+
+            // cambio = euros*dolar;
+
+            // console.log(cambio);
+
+            //Act 16
+
+            // let a = prompt("Dale un valor a la variable a");
+            // let b = prompt("Dale un valor a la variable b");
+            // let c = prompt("Dale un valor a la variable c");
+
+            // if(!(Number.isInteger(a)) && !(Number.isInteger(b)) && !(Number.isInteger(c))){
+            //     console.error("Una de las variables no es un número");
+            // }else{
+            //     let positivo = (-b + (Math.sqrt((b*b)-(4*a*c)))/(2*a));
+            //     let negativo = (-b - (Math.sqrt((b*b)-(4*a*c)))/(2*a));
+            //     console.log('Positivo = ' + positivo);
+            //     console.log('Negativo = ' + negativo);
             // }
