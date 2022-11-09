@@ -104,3 +104,37 @@
 // let nombre = prompt("Introduce tu nombre", "Harry Potter");
 // console.log("Hola " + nombre);
 
+// Actividad 1. Propiedades de la pantalla.
+// Implementa una aplicación que muestre la siguiente información sobre la pantalla del usuario:
+//  El ancho y alto de la pantalla. Propiedades width y height.
+//  El ancho y alto de la pantalla disponibles teniendo en cuenta los elementos de la interfaz
+// como la barra de tareas del sistema operativo. Propiedades availWidth y
+// availHeight.
+//  La profundidad de color de la pantalla del usuario. Propiedad
+// colorDepth/pixelDepth
+
+// console.log(screen.width);
+// console.log(screen.height);
+// console.log(screen.availWidth);
+// console.log(screen.availHeight);
+// console.log(screen.pixelDepth);
+
+// Actividad 1. Propiedades de la URL.
+// Implementa una aplicación que muestre la siguiente información sobre la URL de la página:
+//  La URL completa de la página. Propiedad href.
+//  El nombre de dominio. Propiedad hostname.
+//  La ruta y el nombre del fichero de la página. Propiedad pathname.
+//  El protocolo de comunicación utilizado. Propiedad protocol.
+
+// console.log(location.href);
+// console.log(location.hostname);
+// console.log(location.pathname);
+// console.log(location.protocol);
+
+// Implementa una aplicación que muestre la siguiente información sobre el navegador del usuario:
+//  El valor de la cabecera HTTP user-agent enviada por el navegador al servidor. Propiedad
+// userAgent.
+//  Si las cookies están habilitadas o no. Propiedad cookieEnabled.
+//  El sistema operativo sobre el que corre el navegador. Propiedad platform.
+//  El lenguaje del navegador. Propiedad language.
+
