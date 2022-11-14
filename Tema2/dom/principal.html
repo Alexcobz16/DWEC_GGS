@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Principal</title>
+    </head>
+    <body>
+        <script>
+// Actividad 1. Recuperar elementos HTML.
+// Los principales métodos para recuperar elementos de un documento HTML son:
+// getElementById, getElementsByTagName, getElementsByClassName,
+// querySelector y querySelectorAll.
+// Crea un nuevo documento HTML con 4 párrafos (elementos p). Recupera el segundo párrafo
+// utilizando los 5 métodos.
+
+// console.log(document.getElementById("root")); = element
+// document.getElementsByTagName("p"); = html collection
+// document.getElementsByClassName("outer-wrapper"); = html collection
+// document.querySelector("div"); = primer elemento
+// document.querySelectorAll("p"); = nodelist
+
+// Actividad 2. Cambiar contenido.
+// Las principales propiedades para cambiar el contenido de elementos HTML son: innerHTML y
+// textContent.
+// Cambia el contenido del segundo párrafo por “Éste es el nuevo contenido del segundo párrafo” y el
+// contenido del tercero por “Éste es el nuevo contenido del <strong>tercer párrafo</strong>.”
+
+let links = document.querySelectorAll("a");
+
+let tienda = links[1];
+
+tienda.textContent = "GGS";
+
+        </script>
+        <p></p>
+        <p>Este es el contenido del segundo párrafo</p>
+        <p>Este es el contenido del <strong>tercer párrafo</strong></p>
+    </body>
+</html>

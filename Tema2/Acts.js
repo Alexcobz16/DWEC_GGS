@@ -138,3 +138,8 @@
 //  El sistema operativo sobre el que corre el navegador. Propiedad platform.
 //  El lenguaje del navegador. Propiedad language.
 
+// console.log(navigator.userAgent);
+// console.log(navigator.cookieEnabled);
+// console.log(navigator.platform);
+// console.log(navigator.language);
+
