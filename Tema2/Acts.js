@@ -143,3 +143,35 @@
 // console.log(navigator.platform);
 // console.log(navigator.language);
 
+// 13
+// 5. Cookies
+// Actividad 1. Creación de funciones para facilitar la lectura y escritura de cookies.
+// En muchas ocasiones, cuando se crea una cookie, ésta contiene datos introducidos por el usuario
+// desde un formulario. Es muy posible que, si se hacen peticiones GET al servidor, que algunos de los
+// datos almacenados en las cookies se envíen en la URL como parte de una consulta
+// (?parametro1=valor1&parametro2=valor2&...).
+// Ya sabemos que hay caracteres que no pueden formar parte de una URL. Por esta razón es bastante
+// común utilizar métodos que codifiquen y decodifiquen los valores de las cookies. Concretamente se
+// utilizan los métodos globales encodeURIComponent y decodeURIComponent.
+// Otra razón para la codificación y decodificación de las cadenas es que las cookies no aceptan punto
+// y coma (;), comas (,) ni espacios en blanco ( ).
+// Implementa las siguientes funciones para facilitar el trabajo con las cookies:
+//  setAndEncodeCookie(name, value, daysToLive=null) – Función que crea una nueva cookie,
+// codificando su valor.
+// o name – nombre de la cookie.
+// o value – valor de la cookie.
+// o daysToLive – número de días que va tener de vida la cookie (servirá para establecer
+// el valor del atributo max-age de la cookie).
+//  getAndDecodeCookie(name) – Función que obtiene una cookie dada y la decodifica,
+// devolviendo su valor. Si la cookie no existe, devuelve null.
+// o name – nombre de la cookie.
+//  checkCookie(name) – Función que comprueba si una cookie existe, en cuyo caso devuelve
+// true. En caso contrario devuelve false.
+// o name – nombre de la cookie.
+//  getAndDecodeCookies() – Función que devuelve un mapa (Map) con todas las cookies en su
+// interior como pares clave-valor. Investiga cómo se usa el objeto Map y realiza la
+// implementación de la función.
+
+let ggs = setAndEnableCookie("ggs", 3, null);
+console.log(getAndDecodeCookie("ggs"));
+console.log(checkCookie("ggs"));
