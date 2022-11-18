@@ -172,6 +172,17 @@
 // interior como pares clave-valor. Investiga cómo se usa el objeto Map y realiza la
 // implementación de la función.
 
-let ggs = setAndEnableCookie("ggs", 3, null);
-console.log(getAndDecodeCookie("ggs"));
-console.log(checkCookie("ggs"));
+function setAndEncodeCookie(name, value, daysToLive=null){
+        document.cookie = "nombre=GGS;" + " expires=" + null + ";" + " path=/;";}
+
+function getAndDecodeCookie(name){
+
+}
+
+function checkCookie(name){
+
+}
+
+function getAndDecodeCookies(){
+        
+}
