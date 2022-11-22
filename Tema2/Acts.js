@@ -173,7 +173,8 @@
 // implementación de la función.
 
 function setAndEncodeCookie(name, value, daysToLive=null){
-        document.cookie = "nombre=GGS;" + " expires=" + null + ";" + " path=/;";}
+        document.cookie = "nombre=GGS;" + " expires=" + null + ";" + " path=/;";
+}
 
 function getAndDecodeCookie(name){
 
