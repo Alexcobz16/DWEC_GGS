@@ -29,3 +29,17 @@
 
 // let array = [3,6,9,7,7,4,9];
 // find(array, primerIgual);
+
+function every(array, callback){
+    let check = true;
+    for(i=0;i<array.length && check;i++){
+        check = callback(array[i]);
+    }
+    return check;
+}
+
+function callback(valor){
+    return valor > 18;
+}
+
+console.log((a = 3, b = 5)=>a+b);
