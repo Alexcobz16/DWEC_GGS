@@ -172,16 +172,36 @@
 // interior como pares clave-valor. Investiga cómo se usa el objeto Map y realiza la
 // implementación de la función.
 
-function setAndEncodeCookie(name, value, daysToLive=null){
-        document.cookie = "nombre=GGS;" + " expires=" + null + ";" + " path=/;";}
+/**
+ * 
+ * @param {*} name 
+ * @param {*} value 
+ * @param {*} daysToLive 
+ */
+function setAndEncodeCookie(name, value, daysToLive){
+        const fecha = new Date();
+        document.cookie = name + "=" + encodeURIComponent(value) +"; expires=" + fecha.setTime(fecha.getTime() + (daysToLive*24*60*60*1000)) + "; path=/";
+}
+
+/**
+ * 
+ * @param {*} name 
+ */
 
 function getAndDecodeCookie(name){
 
 }
 
+/**
+ * 
+ * @param {*} name 
+ */
+
 function checkCookie(name){
 
 }
+
+
 
 function getAndDecodeCookies(){
         
