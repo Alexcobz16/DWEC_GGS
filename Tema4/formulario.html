@@ -2,19 +2,20 @@
 <html>
     <head>
         <title>GGS4</title>
+        <link rel="stylesheet" href="formulario.css">
     </head>
     <body>
         <div id="formulario">
             <form>
                 <h1>Formulario de registro</h1>
                 <p class="titulos">Email:</p>
-                <input name="email">
+                <input name="email" type="email" class="required">
                 <p class="titulos">Password:</p>
-                <input name="psswd">
+                <input name="psswd" maxlength="10" pattern="\d+" class="required">
                 <p class="titulos">Nombre:</p>
                 <input name="nombre">
                 <p class="titulos">Edad:</p>
-                <input name="edad">
+                <input name="edad" min="18" max="100" type="number">
                 <fieldset class="elecciones">
                     <legend>Género:</legend>
                     <p><input type="radio" name="genero" value="H">Hombre <input type="radio" name="genero" value="M"> Mujer</p>
@@ -27,7 +28,7 @@
                     <legend>Intereses:</legend>
                     <p><input type="checkbox" name="coches" value="coches"> Coches <input type="checkbox" name="motos" value="motos"> Motos <input type="checkbox" name="barcos" value="barcos"> Barcos</p>
                 </div>
-                <input type="submit" name="enviar" value="Enviar">
+                <input type="submit" name="enviar" value="Enviar" id="enviar">
             </form>
         </div>
         <script src="formulario.js"></script>

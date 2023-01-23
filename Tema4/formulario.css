@@ -1,5 +1,7 @@
-#formulario{
-    padding-left: 50%;
-    padding-top: 50%;
-    border: 1px black solid;
+.required{
+    outline: 2px solid aquamarine;
+  }
+
+.invalid{
+  outline: 2px solid red;
 }
