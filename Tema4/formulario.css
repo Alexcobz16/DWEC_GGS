@@ -1,0 +1,7 @@
+.required{
+    outline: 2px solid aquamarine;
+  }
+
+.invalid{
+  outline: 2px solid red;
+}

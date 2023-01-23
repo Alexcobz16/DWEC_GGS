@@ -172,18 +172,40 @@
 // interior como pares clave-valor. Investiga cómo se usa el objeto Map y realiza la
 // implementación de la función.
 
-function setAndEncodeCookie(name, value, daysToLive=null){
-        document.cookie = "nombre=GGS;" + " expires=" + null + ";" + " path=/;";
+
+function colocarPieza(pieza, correcto){
+        const min = 0;
+        const max = 9;
+        let posX;
+        let posY;
+        do{
+                posX = getPosicion(min, max);
+                posY = getPosicion(min, max);
+        }while(!correcto(posX, posY));
+        mapa[posX][posY] = pieza;
 }
 
-function getAndDecodeCookie(name){
-
+function getPosicion(min, max){
+        return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
-function checkCookie(name){
 
+function posicionSalida(posX, posY){
+        return mapa[posX][posY] == VALLA;
 }
 
-function getAndDecodeCookies(){
-        
+function posicionCaracol(posX, posY){
+        return mapa[posX][posY] == POSICION;
+}
+
+colocarPieza(SALIDA, posicionSalida);
+colocarPieza(CARACOL, posicionCaracol);
+
+
+for(i=0;i<mapa.length;i++){
+        let linea = '';
+        for(j=0;j<mapa[i].length;j++){
+                linea += mapa[i][j];
+        }
+        console.log(linea);
 }
