@@ -1,11 +1,11 @@
 .required{
-    outline: 2px solid aquamarine;
-  }
+  outline: 2px solid aquamarine;
+}
 
 .invalid{
-  outline: 2px solid red;
+outline: 2px solid red;
 }
 
 #emailErr, #psswdErr, #nombreErr, #edadErr{
-  color: red;
+color: red;
 }
