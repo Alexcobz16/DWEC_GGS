@@ -1,44 +1,41 @@
-document.forms[0]["email"].addEventListener("blur", email, false);
+const error = "Err";
 
-function email(){
-    if(!document.forms[0]["email"].checkValidity()){
-        document.forms[0]["email"].className = "invalid";
-        document.getElementById("errEmail").textContent = comprobarErrores(document.forms[0]["email"]);
-        inhabilitar();
+document.getElementById("email").addEventListener("blur", validarElemento, false);
+
+function validarElemento(e) {
+    const input = e.target;
+    if(input.name == "email"){
+        validarEmail(input);
+    }else if(input.name == "psswd"){
+        validarPsswd(input);
+    }else if(input.name == "nombre"){
+        validarNombre(input);
+    }else if(input.name == "edad"){
+        validarEdad(input);
+    }
+}
+
+function validarEmail(email){
+    const regexp = new RegExp("[A-Z a-z ñ Ñ 0-9]*@[A-Z a-z ñ Ñ 0-9]*\.[A-Z a-z ñ Ñ 0-9]{0,5}");
+    if(!validarRegExp(email, regexp)){
+        console.log("da petazo");
     }else{
-        document.forms[0]["email"].className = "required";
-        document.getElementById("errEmail").textContent = "";
-        habilitar();
-
+        console.log("va de lujazo");
     }
 }
 
-function comprobarErrores(input){
-    let error = "";
+function validarPsswd(psswd){
 
-    if(input.validity.valueMissing) {
-        error += "Este campo no puede estar vacío."
-    }
-    // El contenido del campo no es el que especifica el tipo de campo
-    if(input.validity.typeMismatch) {
-        error += "Los datos suministrados no tienen el formato correcto";
-    }
-    // El rango de valores no está entre los especificados
-    if(input.validity.rangeUnderflow || input.validity.rangeOverflow) {
-        error += `Debe contener un valor entre ${input.min} y ${input.max}`;
-    }
-    // No se cumple el patrón definido en el campo
-    if(input.validity.patternMismatch) {
-        error += "El campo debe contener al menos un número";
-    }
-
-    return error;
 }
 
-function inhabilitar(){
-    document.forms[0]["enviar"].disabled = true;
+function validarNombre(nombre){
+
 }
 
-function habilitar(){
-    document.forms[0]["enviar"].disabled = false;
+function validarEdad(edad){
+
+}
+
+function validarRegExp(input, regexp){
+    return regexp.test(input.value);
 }

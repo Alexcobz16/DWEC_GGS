@@ -6,6 +6,6 @@
   outline: 2px solid red;
 }
 
-#errEmail, #errPsswd, #errNombre, #errEdad{
+#emailErr, #psswdErr, #nombreErr, #edadErr{
   color: red;
 }

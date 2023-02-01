@@ -9,17 +9,17 @@
             <form>
                 <h1>Formulario de registro</h1>
                 <p class="titulos">Email:</p>
-                <input name="email" type="email" class="required">
-                <p id="errEmail"></p>
+                <input name="email" type="email" class="required" id="email">
+                <p id="emailErr"></p>
                 <p class="titulos">Password:</p>
-                <input name="psswd" maxlength="10" pattern="\d+" class="required">
-                <p id="errPsswd"></p>
+                <input name="psswd" maxlength="10" pattern="\d+" class="required" id="psswd">
+                <p id="psswdErr"></p>
                 <p class="titulos">Nombre:</p>
-                <input name="nombre">
-                <p id="errNombre"></p>
+                <input name="nombre" id="nombre">
+                <p id="nombreErr"></p>
                 <p class="titulos">Edad:</p>
-                <input name="edad" min="18" max="100" type="number">
-                <p id="errEdad"></p>
+                <input name="edad" min="18" max="100" type="number" id="edad">
+                <p id="edadErr"></p>
                 <fieldset class="elecciones">
                     <legend>Género:</legend>
                     <p><input type="radio" name="genero" value="H">Hombre <input type="radio" name="genero" value="M"> Mujer</p>
